@@ -13,11 +13,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: const [
-        Center(
-          child: Text("Getting ready to start build"),
-        )
-      ]),
+      body: SafeArea(
+        child: Column(children: const [
+          Center(
+            child: Center(child: Text("Getting ready to start build")),
+          )
+        ]),
+      ),
     );
   }
 }
